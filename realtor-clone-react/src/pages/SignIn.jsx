@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import OAuth from './../components/OAuth'; 
+import OAuth from './../components/OAuth';
 
 export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -75,11 +75,8 @@ export default function SignIn() {
             hover: bg-blue-700 transition duration-150 ease-in-out
             hover: shadow-lg active:bg-blue-800'
               type='submit'> Sign in</button>
-            <div className='flex items-center my-4 
-                    before:border-t 
-                    before:flex-1 
-                    before:border-gray-300'>
-              <p className='text-center font-semibold mx-4'>OR</p>
+            <div className="flex items-center  my-4 before:border-t before:flex-1 before:border-gray-300 after:border-t after:flex-1 after:border-gray-300">
+              <p className="text-center font-semibold mx-4">OR</p>
             </div>
             <OAuth />
           </form>
